@@ -1855,6 +1855,16 @@ Usage (In Ghost editor):
     max-width: 840px;
 }
 
+.post-full-comments h2 {
+    margin: 0 0 1em;
+    font-size: 4.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.post-full-comments p {
+    text-align: center;
+}
 
 /* 7.4. Related posts
 /* ---------------------------------------------------------- */
