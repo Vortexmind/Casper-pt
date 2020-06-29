@@ -1,4 +1,4 @@
-# Casper-PT
+# casper-pt
 
 ![Test](https://github.com/Vortexmind/Casper-PT/workflows/Test/badge.svg) ![Deploy Theme](https://github.com/Vortexmind/Casper-PT/workflows/Deploy%20Theme/badge.svg) ![Code scanning](https://github.com/Vortexmind/Casper-PT/workflows/Code%20scanning%20-%20action/badge.svg)
 
