@@ -90,10 +90,10 @@ into the {body} of the default.hbs template --}}
                 {{!-- This is a responsive image, it loads different sizes depending on device
                 https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
                 <img
-                    srcset="https://res.cloudinary.com/paolotagliaferri/image/fetch/w_300,c_fit/{{img_url feature_image absolute="true"}} 300w,
-                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit/{{img_url feature_image absolute="true"}} 600w,
-                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit/{{img_url feature_image absolute="true"}} 1000w,
-                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit/{{img_url feature_image absolute="true"}} 2000w"
+                    srcset="https://res.cloudinary.com/paolotagliaferri/image/fetch/w_300,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 300w,
+                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 600w,
+                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 1000w,
+                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 2000w"
                     sizes="(max-width: 800px) 400px,
                         (max-width: 1170px) 1170px,
                             2000px"
