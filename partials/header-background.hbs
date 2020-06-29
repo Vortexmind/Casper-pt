@@ -15,26 +15,26 @@ with a `no-image` class so we can style it accordingly.
 
 <style type="text/css">
     .responsive-header-img {
-        background-image: url({{img_url background size='xl'}});
+        background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit/{{img_url background absolute="true"}});
     }
 
     @media(max-width: 1000px) {
         .responsive-header-img {
-            background-image: url({{img_url background size='l'}});
-            background-image: -webkit-image-set(url({{img_url background size='l'}}) 1x,
-                url({{img_url background size='xl'}}) 2x);
-            background-image: image-set(url({{img_url background size='l'}}) 1x,
-                url({{img_url background size='xl'}}) 2x);
+            background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit/{{img_url background absolute="true"}});
+            background-image: -webkit-image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit/{{img_url background absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit/{{img_url background absolute="true"}}) 2x);
+            background-image: image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit/{{img_url background absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit/{{img_url background absolute="true"}}) 2x);
         }
     }
 
     @media(max-width: 600px) {
         .responsive-header-img {
-            background-image: url({{img_url background size='m'}});
-            background-image: -webkit-image-set(url({{img_url background size='m'}}) 1x,
-                url({{img_url background size='l'}}) 2x);
-            background-image: image-set(url({{img_url background size='m'}}) 1x,
-                url({{img_url background size='l'}}) 2x);
+            background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit/{{img_url background absolute="true"}});
+            background-image: -webkit-image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit/{{img_url background absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit/{{img_url background absolute="true"}}) 2x);
+            background-image: image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit/{{img_url background absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit/{{img_url background absolute="true"}}) 2x);
         }
     }
 </style>
