@@ -68,7 +68,7 @@ body {
 /* Full width page blocks */
 .outer {
     position: relative;
-    padding: 0 5vw;
+    padding: 0;
 }
 
 /* Centered content container blocks */
