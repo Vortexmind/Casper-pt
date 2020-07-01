@@ -90,14 +90,14 @@ into the {body} of the default.hbs template --}}
                 {{!-- This is a responsive image, it loads different sizes depending on device
                 https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
                 <img
-                    srcset="https://res.cloudinary.com/paolotagliaferri/image/fetch/w_300,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 300w,
-                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 600w,
-                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 1000w,
-                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image absolute="true"}} 2000w"
+                    srcset="https://res.cloudinary.com/paolotagliaferri/image/fetch/w_300,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="s" absolute="true"}} 300w,
+                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="m" absolute="true"}} 600w,
+                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="l" absolute="true"}} 1000w,
+                            https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url feature_image size="xl" absolute="true"}} 2000w"
                     sizes="(max-width: 800px) 400px,
                         (max-width: 1170px) 1170px,
                             2000px"
-                    src="https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit/{{img_url feature_image absolute="true"}}"
+                    src="https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit/{{img_url feature_image size="m" absolute="true"}}"
                     alt="{{title}}"
                 />
             </figure>
@@ -116,7 +116,7 @@ into the {body} of the default.hbs template --}}
 
             <section class="post-full-comments">
                 <h2>Comments</h2>
-                <p>This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/">Learn how your comment data is processed</a>.</p>
+                <p>This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" rel="noopener">Learn how your comment data is processed</a>.</p>
                 <p>Comments are moderated so there will be a delay before your comment is published.</p>
                 <div id="commento"></div>
                 <script defer data-auto-init="false" src="https://commento.paolotagliaferri.com/js/commento.js" type="text/javascript"></script>

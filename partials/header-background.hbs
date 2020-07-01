@@ -15,26 +15,26 @@ with a `no-image` class so we can style it accordingly.
 
 <style type="text/css">
     .responsive-header-img {
-        background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}});
+        background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="xl"absolute="true"}});
     }
 
     @media(max-width: 1000px) {
         .responsive-header-img {
-            background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}});
-            background-image: -webkit-image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 1x,
-                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 2x);
-            background-image: image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 1x,
-                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 2x);
+            background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="l" absolute="true"}});
+            background-image: -webkit-image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="l" absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="xl" absolute="true"}}) 2x);
+            background-image: image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="l" absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_2000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="xl" absolute="true"}}) 2x);
         }
     }
 
     @media(max-width: 600px) {
         .responsive-header-img {
-            background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}});
-            background-image: -webkit-image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 1x,
-                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 2x);
-            background-image: image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 1x,
-                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background absolute="true"}}) 2x);
+            background-image: url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="m" absolute="true"}});
+            background-image: -webkit-image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="m" absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="l" absolute="true"}}) 2x);
+            background-image: image-set(url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_600,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="m" absolute="true"}}) 1x,
+                url(https://res.cloudinary.com/paolotagliaferri/image/fetch/w_1000,c_fit,q_auto,f_auto,dpr_auto/{{img_url background size="l" absolute="true"}}) 2x);
         }
     }
 </style>
