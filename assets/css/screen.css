@@ -68,7 +68,7 @@ body {
 /* Full width page blocks */
 .outer {
     position: relative;
-    padding: 0;
+    padding: 0 3vw;
 }
 
 /* Centered content container blocks */
@@ -3108,4 +3108,5 @@ progress.reading-progress-bar {
     position: relative;
     top: 0px;
     height: 5px;
+    padding: 0 -3vw;
 }  
