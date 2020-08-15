@@ -3110,4 +3110,12 @@ progress.reading-progress-bar {
     top: 0px;
     height: 5px;
     padding: 0 -3vw;
-}  
+}
+
+/* Twitter CTA in posts page */
+
+.post-twitter-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
