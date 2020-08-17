@@ -2,11 +2,8 @@
 
     {{#if feature_image}}
     <a class="post-card-image-link" href="{{url}}">
-        {{!-- This is a responsive image, it loads different sizes depending on device
-        https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
         <img class="post-card-image"
-            srcset="{{img_url feature_image size="s" absolute="true"}} 300w,
-                    {{img_url feature_image size="s" absolute="true"}} 600w,
+            srcset="{{img_url feature_image size="s" absolute="true"}} 600w,
                     {{img_url feature_image size="m" absolute="true"}} 1000w,
                     {{img_url feature_image size="l" absolute="true"}} 2000w"
             sizes="(max-width: 1000px) 400px, 700px"
