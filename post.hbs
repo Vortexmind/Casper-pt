@@ -129,6 +129,15 @@ into the {body} tag of the default.hbs template --}}
 {{!-- Credits for commento lazy load:  https://www.dev-eth0.de/2019/07/16/integration-of-commento-into-hugo/#lazy-initialization-optional --}}
 {{#contentFor "scripts"}}
 <script>
+function commentsSectionIntersecting(entries) {
+  entries
+    .filter(e => e.isIntersecting)
+    .forEach(e => {
+      window.commento.main();
+      observer.unobserve(e.target);
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   const commentsElem = document.getElementById("commento");
   if (commentsElem) {
