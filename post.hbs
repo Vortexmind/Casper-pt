@@ -129,6 +129,8 @@ into the {body} tag of the default.hbs template --}}
 {{!-- Credits for commento lazy load:  https://www.dev-eth0.de/2019/07/16/integration-of-commento-into-hugo/#lazy-initialization-optional --}}
 {{#contentFor "scripts"}}
 <script>
+const observer = new IntersectionObserver(commentsSectionIntersecting);
+
 function commentsSectionIntersecting(entries) {
   entries
     .filter(e => e.isIntersecting)
