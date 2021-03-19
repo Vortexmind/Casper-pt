@@ -1992,7 +1992,7 @@ the right place. Onward!
 .article-twitter-cta {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0 0;
+    margin: 40px 0 0;
 }
 
 .article-twitter-cta-content {
@@ -2004,4 +2004,9 @@ the right place. Onward!
 .article-twitter-cta-content svg {
     width: 32px;
     height: 32px;
+    fill: #1DA1F2;
+}
+
+.article-twitter-cta-content a {
+    margin-right: 16px;
 }
