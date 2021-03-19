@@ -2007,6 +2007,6 @@ the right place. Onward!
     fill: #1DA1F2;
 }
 
-.article-twitter-cta-content a {
+.article-twitter-cta-content a.twitter-cta {
     margin-right: 16px;
 }
