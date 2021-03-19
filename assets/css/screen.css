@@ -2000,3 +2000,8 @@ the right place. Onward!
     display: flex;
     align-items: center;
 }
+
+.article-twitter-cta-content svg {
+    width: 32px;
+    height: 32px;
+}
