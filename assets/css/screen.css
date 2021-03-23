@@ -1063,6 +1063,7 @@ except for when immediately preceeded by a heading */
 /* This keeps small iamges centered */
 .kg-image-card img {
     margin: auto;
+    text-align: center;
 }
 
 
