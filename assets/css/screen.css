@@ -1060,10 +1060,13 @@ except for when immediately preceeded by a heading */
     width: 100%;
 }
 
+figure.kg-image-card { 
+    text-align: center;
+}
+
 /* This keeps small iamges centered */
 .kg-image-card img {
     margin: auto;
-    text-align: center;
 }
 
 
