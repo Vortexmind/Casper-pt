@@ -869,6 +869,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: auto;
 }
 
 @media (max-width: 600px) {
