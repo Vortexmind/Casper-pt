@@ -2239,3 +2239,17 @@ the right place. Onward!
 .article-twitter-cta-content a.twitter-cta {
     margin-right: 16px;
 }
+
+/* Buy me a coffee CTA in posts page */
+
+.article-buymeacoffee-cta {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+
+.article-buymeacoffee-cta-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
