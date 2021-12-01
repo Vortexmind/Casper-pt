@@ -1160,7 +1160,7 @@ figure.kg-image-card {
     margin: auto;
 }
 
-.has-serif-title .kg-toggle-card h4 {
+.has-serif-title .kg-toggle-heading-text {
     font-family: var(--font-serif);
 }
 
