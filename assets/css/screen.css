@@ -1037,7 +1037,7 @@ is the very first element in the post content */
     text-decoration: underline;
 }
 
-.gh-content > blockquote,
+.gh-content > blockquote:not([class]),
 .gh-content > ol,
 .gh-content > ul,
 .gh-content > dl,
@@ -1085,13 +1085,13 @@ is the very first element in the post content */
     padding-left: 1.9em;
 }
 
-.gh-content > blockquote {
+.gh-content > blockquote:not([class]) {
     position: relative;
     font-style: italic;
     padding: 0;
 }
 
-.gh-content > blockquote::before {
+.gh-content > blockquote:not([class])::before {
     content: "";
     position: absolute;
     left: -1.5em;
@@ -1125,7 +1125,7 @@ is the very first element in the post content */
 }
 
 @media (max-width: 650px) {
-    .gh-content > blockquote,
+    .gh-content > blockquote:not([class]),
     .gh-content > ol,
     .gh-content > ul,
     .gh-content > dl,
@@ -1185,6 +1185,15 @@ figure.kg-image-card {
 
 .kg-toggle-content > * + * {
     margin-top: min(2.4rem, 4vmin);
+}
+
+.kg-blockquote-alt {
+    font-family: var(--font-serif);
+    color: var(--color-midgrey);
+}
+
+.has-sans-body .kg-blockquote-alt {
+    font-family: var(--font-sans);
 }
 
 
@@ -1903,6 +1912,14 @@ html.dark-mode .site-archive-header .no-image {
     background: var(--color-darkmode);
 }
 
+html.dark-mode .kg-product-card-rating-active.kg-product-card-rating-star svg {
+    fill: #ebeef0;
+}
+
+html.dark-mode .kg-product-card-rating-star svg {
+    fill: #394047;
+}
+
 @media (prefers-color-scheme: dark) {
     html.auto-color body {
         color: rgba(255, 255, 255, 0.75);
@@ -2039,6 +2056,14 @@ html.dark-mode .site-archive-header .no-image {
     html.auto-color .site-archive-header .no-image {
         color: rgba(255, 255, 255, 0.9);
         background: var(--color-darkmode);
+    }
+
+    html.auto-color .kg-product-card-rating-active.kg-product-card-rating-star svg {
+        fill: #ebeef0;
+    }
+
+    html.auto-color .kg-product-card-rating-star svg {
+        fill: #394047;
     }
 }
 
